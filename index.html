@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://nicortiz.com/images/fa/fontawesome-pro-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="debug">
+
+<div class="center code tc" style="width: 400px;">
+    <div class="cf tr pa3 f4">
+        <div class="fl w-10">&#8203;</div>
+        <div id="calculating" class="fl w-90"></div>
+    </div>
+    <div class="cf tr code pa3 f2">
+        <div class="fl w-10">&#8203;</div>
+        <div id="entering" class="fl w-90">hello</div>
+    </div>
+
+    <div id="buttons">
+        <div class="cf">
+            <div id="clearButton" class="fl w-50 pa2">
+                clear
+            </div>
+
+            <div id="deleteButton" class="fl w-50 pa2">
+                delete
+            </div>
+        </div>
+        <div class="cf">
+            <div class="digit fl w-25 pa2">7</div>
+
+            <div class="digit fl w-25 pa2">8</div>
+
+            <div class="digit fl w-25 pa2">9</div>
+
+            <div id="divideButton" class="operator fl w-25 pa2">÷</div>
+        </div>
+
+        <div class="cf">
+            <div class="digit fl w-25 pa2">4</div>
+
+            <div class="digit fl w-25 pa2">5</div>
+
+            <div class="digit fl w-25 pa2">6</div>
+
+            <div id="multiplyButton" class="operator fl w-25 pa2">x</div>
+        </div>
+
+        <div class="cf">
+            <div class="digit fl w-25 pa2">1</div>
+
+            <div class="digit fl w-25 pa2">2</div>
+
+            <div class="digit fl w-25 pa2">3</div>
+
+            <div id="subtractButton" class="operator fl w-25 pa2">-</div>
+        </div>
+
+        <div class="cf">
+            <div class="digit fl w-25 pa2">0</div>
+
+            <div class="digit fl w-25 pa2">.</div>
+
+            <div id="equalsButton" class="fl w-25 pa2">=</div>
+
+            <div id="addButton" class="operator fl w-25 pa2">+</div>
+        </div>
+    </div>
+
+    <div id="log"><!-- replace with JS --></div>
+
+</div>
+
+</body>
+</html>

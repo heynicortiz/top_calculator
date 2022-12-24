@@ -1,0 +1,16 @@
+.digit {
+    font-weight: bold;
+}
+
+#buttons * {
+    user-select: none;
+}
+
+/*#entering::before { content: '\00a0'; }*/
+/*#calculating::before { content: '\00a0'; }*/
+
+#entering, #calculating {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
