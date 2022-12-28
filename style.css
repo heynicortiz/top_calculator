@@ -1,14 +1,34 @@
-.digit {
+body {
+    background-color: #272F32;
+    color: #DAEAEF;
+    height: 100vh;
+}
+
+#buttons *, #screen {
+    user-select: none;
+    border: 1px solid;
+}
+
+.calc-button {
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
-#buttons * {
-    user-select: none;
+.calc-button:hover {
+    background-color: #394649;
+    transition: .7s;
 }
 
-/*#entering::before { content: '\00a0'; }*/
-/*#calculating::before { content: '\00a0'; }*/
+.func-button:hover {
+    transition: .7s;
+}
 
+.f1, a {
+    color: #FF3D2E;
+    text-decoration: none;
+}
+
+/* ellipsize if the line would break over one */
 #entering, #calculating {
     white-space: nowrap;
     overflow: hidden;

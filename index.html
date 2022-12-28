@@ -8,70 +8,79 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body class="debug">
+<body class="flex justify-center items-center">
 
-<div class="center code tc" style="width: 400px;">
-    <div class="cf tr pa3 f4">
-        <div class="fl w-10">&#8203;</div>
-        <div id="calculating" class="fl w-90"></div>
-    </div>
-    <div class="cf tr code pa3 f2">
-        <div class="fl w-10">&#8203;</div>
-        <div id="entering" class="fl w-90">hello</div>
+<div class="code tc" style="width: 400px;">
+    <h1 class="f1 tc ma2">Calculator</h1>
+
+    <div id="screen">
+        <div class="cf tr pa3 f4">
+            <div class="fl" style="visibility: hidden">&#8203;</div> <!-- ensuring line height remains without explicit height -->
+            <div id="previous"></div>
+        </div>
+        <div class="cf tr code pa3 f2">
+            <div class="fl" style="visibility: hidden">&#8203;</div> <!-- ensuring line height remains without explicit height -->
+            <div id="current">hello</div>
+        </div>
     </div>
 
     <div id="buttons">
         <div class="cf">
-            <div id="clearButton" class="fl w-50 pa2">
+            <div id="clearButton" class="fl func-button w-50 ph2 pv4 hover-bg-light-red bg-red hover-black">
                 clear
             </div>
 
-            <div id="deleteButton" class="fl w-50 pa2">
+            <div id="deleteButton" class="fl func-button w-50 ph2 pv4 hover-bg-light-blue bg-blue hover-black">
                 delete
             </div>
         </div>
         <div class="cf">
-            <div class="digit fl w-25 pa2">7</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">7</div>
 
-            <div class="digit fl w-25 pa2">8</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">8</div>
 
-            <div class="digit fl w-25 pa2">9</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">9</div>
 
-            <div id="divideButton" class="operator fl w-25 pa2">÷</div>
+            <div id="divideButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">÷</div>
         </div>
 
         <div class="cf">
-            <div class="digit fl w-25 pa2">4</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">4</div>
 
-            <div class="digit fl w-25 pa2">5</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">5</div>
 
-            <div class="digit fl w-25 pa2">6</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">6</div>
 
-            <div id="multiplyButton" class="operator fl w-25 pa2">x</div>
+            <div id="multiplyButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">x</div>
         </div>
 
         <div class="cf">
-            <div class="digit fl w-25 pa2">1</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">1</div>
 
-            <div class="digit fl w-25 pa2">2</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">2</div>
 
-            <div class="digit fl w-25 pa2">3</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">3</div>
 
-            <div id="subtractButton" class="operator fl w-25 pa2">-</div>
+            <div id="subtractButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">-</div>
         </div>
 
         <div class="cf">
-            <div class="digit fl w-25 pa2">0</div>
+            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">0</div>
 
-            <div class="digit fl w-25 pa2">.</div>
+            <div id="decimalButton" class="calc-button fl w-25 ph2 pv4 hover-yellow">.</div>
 
-            <div id="equalsButton" class="fl w-25 pa2">=</div>
+            <div id="equalsButton" class="calc-button fl w-25 ph2 pv4 hover-yellow">=</div>
 
-            <div id="addButton" class="operator fl w-25 pa2">+</div>
+            <div id="addButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">+</div>
         </div>
     </div>
 
     <div id="log"><!-- replace with JS --></div>
+
+    <footer class="cf bottom-0 pa2 mt5 w-100 tc">
+        <a href="https://github.com/heynicortiz/top_calculator"><i class="fab fa-github fa-2x dib grow"></i></a><br>
+        <a href="https://nicortiz.com/"><span class="dib grow">Made by Nic Ortiz</span></a>
+    </footer>
 
 </div>
 
