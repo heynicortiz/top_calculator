@@ -13,65 +13,61 @@
 <div class="code tc" style="width: 400px;">
     <h1 class="f1 tc ma2">Calculator</h1>
 
-    <div id="screen">
-        <div class="cf tr pa3 f4">
-            <div class="fl" style="visibility: hidden">&#8203;</div> <!-- ensuring line height remains without explicit height -->
-            <div id="previous"></div>
-        </div>
-        <div class="cf tr code pa3 f2">
-            <div class="fl" style="visibility: hidden">&#8203;</div> <!-- ensuring line height remains without explicit height -->
-            <div id="current">hello</div>
-        </div>
-    </div>
-
-    <div id="buttons">
-        <div class="cf">
-            <div id="clearButton" class="fl func-button w-50 ph2 pv4 hover-bg-light-red bg-red hover-black">
-                clear
+    <div id="myCalc">
+        <div id="screen">
+            <div class="cf tr pa3 f4">
+                <div class="fl" style="visibility: hidden">&#8203;</div> <!-- ensuring line height remains without explicit height -->
+                <div id="previous"></div>
             </div>
-
-            <div id="deleteButton" class="fl func-button w-50 ph2 pv4 hover-bg-light-blue bg-blue hover-black">
-                delete
+            <div class="cf tr code pa3 f2">
+                <div class="fl" style="visibility: hidden">&#8203;</div> <!-- ensuring line height remains without explicit height -->
+                <div id="current">hello</div>
             </div>
         </div>
-        <div class="cf">
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">7</div>
 
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">8</div>
+        <div id="buttons">
+            <div id="functions">
+                <div id="clearButton" class="calc-button hover-bg-light-red bg-red hover-black">
+                    clear
+                </div>
 
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">9</div>
+                <div id="deleteButton" class="calc-button hover-bg-light-blue bg-blue hover-black">
+                    delete
+                </div>
+            </div>
+            <div id="digits">
+                <div class="digit calc-button">7</div>
 
-            <div id="divideButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">÷</div>
-        </div>
+                <div class="digit calc-button">8</div>
 
-        <div class="cf">
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">4</div>
+                <div class="digit calc-button">9</div>
 
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">5</div>
+                <div class="operator calc-button">÷</div>
 
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">6</div>
+                <div class="digit calc-button">4</div>
 
-            <div id="multiplyButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">x</div>
-        </div>
+                <div class="digit calc-button">5</div>
 
-        <div class="cf">
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">1</div>
+                <div class="digit calc-button">6</div>
 
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">2</div>
+                <div class="operator calc-button">x</div>
 
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">3</div>
+                <div class="digit calc-button">1</div>
 
-            <div id="subtractButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">-</div>
-        </div>
+                <div class="digit calc-button">2</div>
 
-        <div class="cf">
-            <div class="digit calc-button fl w-25 ph2 pv4 hover-yellow">0</div>
+                <div class="digit calc-button">3</div>
 
-            <div id="decimalButton" class="calc-button fl w-25 ph2 pv4 hover-yellow">.</div>
+                <div class="operator calc-button">-</div>
 
-            <div id="equalsButton" class="calc-button fl w-25 ph2 pv4 hover-yellow">=</div>
+                <div class="digit calc-button">0</div>
 
-            <div id="addButton" class="operator calc-button fl w-25 ph2 pv4 hover-yellow">+</div>
+                <div id="decimalButton" class="calc-button">.</div>
+
+                <div id="equalsButton" class="calc-button">=</div>
+
+                <div id="addButton" class="operator calc-button">+</div>
+            </div>
         </div>
     </div>
 
