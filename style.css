@@ -4,23 +4,33 @@ body {
     height: 100vh;
 }
 
-#buttons *, #screen {
-    user-select: none;
+#screen, #myCalc {
     border: 1px solid;
 }
 
+#digits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#functions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
 .calc-button {
+    border: 1px solid;
+    user-select: none;
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 2rem;
+    transition: .7s;
 }
 
-.calc-button:hover {
+#digits .calc-button:hover {
     background-color: #394649;
-    transition: .7s;
-}
-
-.func-button:hover {
-    transition: .7s;
 }
 
 .f1, a {
